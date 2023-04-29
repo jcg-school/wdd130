@@ -1,5 +1,5 @@
-@import url('https://fonts.google.com/noto/specimen/Noto+Sans?category=Sans+Serif,Handwriting');
-@import url('https://fonts.google.com/specimen/Satisfy?category=Handwriting');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
 
 :root {
     --primary-color: #355f96;
