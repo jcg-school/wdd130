@@ -1,7 +1,7 @@
 @import url('https://fonts.google.com/noto/specimen/Noto+Sans?category=Sans+Serif,Handwriting');
 @import url('https://fonts.google.com/specimen/Satisfy?category=Handwriting');
 
-root {
+:root {
     --primary-color: #355f96;
     --secondary-color: #ff6666;
     --accent1-color: #aec3b0;
@@ -17,6 +17,8 @@ root {
 }
 
 body {
+    margin-left: 22%;
+    margin-right: 22%;
     font-family: var(--paragraph-font);
     max-width: 960px;
     padding: 20px;
