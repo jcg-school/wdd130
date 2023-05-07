@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+
+/*This is a CSS comment...*/
+
+:root {
+    --primary-color: #355f96;
+    --secondary-color: #ff6666;
+    --accent1-color: #aec3b0;
+    --accent2-color: #EFF6E0;
+
+    --heading-font: Satisfy, 'Bradley Hand', sans-serif;
+    --paragraph-font: 'Noto Sans', Verdana, sans-serif;
+
+    --nav-background-color: #aec3b0;
+    --nav-link-color: #EFF6E0;
+    --nav-hover-link-color: #310a31;
+    --nav-hover-background-color: #ff6666;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-left: 20%;
+    margin-right: 20%;
+    align-content: center;
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+p {
+    padding: 25px;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover{
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+img {
+    max-width: 100%;
+    /*height: auto;*/
+}
+
+/* Class Selectors */
+.socialinks {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.transparent-block {
+    background-color: rgba(174, 195, 176, .6)
+}
+
+#hero-overlay-h1 {
+    color: var(--secondary-color);
+    position: absolute;
+    top: 50px;
+    Left: 225px;
+}
+
+#hero-overlay-article {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    max-width: 80%;
+    text-align: left;
+}
+
+#hero-overlay-image {
+    max-width: 250px;
+    float: right;
+    margin-left: 2rem;
+}
