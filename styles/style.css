@@ -16,12 +16,18 @@ body {
 nav {
     background-color: steelblue;
     padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center
 }
 
 nav a {
     color: white;
     display: block;
     padding: 20px;
+    text-decoration: none;
+    font-size: 1.35rem;
+    font-weight: 450;
 }
 
 h1 {
@@ -51,6 +57,7 @@ aside {
     background: steelblue;
     color: white;
     position: relative;
+    order: 0;
 }
 
 aside img {
@@ -66,6 +73,16 @@ footer {
     margin-top: 4px;
     border-top: 1px solid #669cee;
     text-align: center;
+}
+
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+    align-content: center;
+}
+
+main {
+    order: 1;
 }
 
 /* Class Selectors */
@@ -85,4 +102,10 @@ footer {
 
 .indent {
     padding-left: 2rem;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2.5fr;
 }
