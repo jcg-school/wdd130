@@ -40,6 +40,10 @@ h1, h2, h3, h4, h5, h6 {
 header {
     padding: 20px;
     background-color: var(--accent1-color);
+    display: grid;
+    grid-template-columns: .3fr 3fr;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
 }
 
 p {
@@ -50,6 +54,13 @@ nav {
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+nav li {
+    flex: 1 1 100%;
+    align-content: right;
 }
 
 nav a {
@@ -66,11 +77,19 @@ nav a:link, nav a:visited {
 nav a:hover{
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
+    font-weight: 650;
 }
 
 img {
     max-width: 100%;
-    /*height: auto;*/
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--nav-background-color);
+    display: grid;
+    grid-template-columns: 4fr 1fr;
 }
 
 /* Class Selectors */
@@ -123,4 +142,9 @@ img {
     max-width: 250px;
     float: right;
     margin-left: 2rem;
+}
+
+#history {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
 }
