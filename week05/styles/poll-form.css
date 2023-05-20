@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+    :root {
+        --primary-color: #355f96;
+        --secondary-color: #ff6666;
+        --accent1-color: #aec3b0;
+        --accent2-color: #EFF6E0;
+    
+        --heading-font: Satisfy, 'Bradley Hand', sans-serif;
+        --paragraph-font: 'Noto Sans', Verdana, sans-serif;
+    
+        --nav-background-color: #aec3b0;
+        --nav-link-color: #EFF6E0;
+        --nav-hover-link-color: #310a31;
+        --nav-hover-background-color: #ff6666;
+    }
+
+    body {
+        color: var(--secondary-color);
+        background-color: var(--primary-color);
+        margin-left: 34%;
+        margin-right: 34%;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--heading-font);
+        color: var(--primary-color);
+    }
+
+    form {
+        margin: 0 auto;
+        border: 3px solid;
+        display: grid;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        background-color: whitesmoke;
+        color: var(--accent1-color);
+        width: 550px;
+        height: 40rem;
+    }
+
+    fieldset {
+        display: grid;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    legend {
+        display: grid;
+        margin-bottom: 5px;
+        padding-bottom: 1.5rem;
+        color: #310a31;
+        font-size: 1.7rem;
+    }
+
+    label {
+        text-align: right;
+        padding-right: 2px;
+    }
+
+    input[type="checkbox"] {
+        width: 22px;
+        height: 22px;
+        vertical-align: bottom;
+    }
+
+    button {
+        text-align: center;
+        width: 150px;
+    }
+
+    button:hover {
+        background-color: #ff6666;
+    }
+    
+    .submit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 1.5rem;
+    }
+
+    footer {
+        text-align: center;
+        background-color: #310a31;
+        color:#EFF6E0
+    }
+
+    .form-item {
+        display: grid;
+        align-items: center;
+        padding-bottom: 8px;
+    }
+
+    .column1 {
+        grid-template-columns: 1fr 1.3fr;
+    }
+
+    .column2 {
+        grid-template-columns: 1fr 2fr;
+    }
