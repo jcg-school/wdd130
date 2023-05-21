@@ -24,14 +24,23 @@
     box-sizing: border-box;
 }
 
-body {
-    margin-left: 20%;
-    margin-right: 20%;
-    align-content: center;
-    font-family: var(--paragraph-font);
-    /*max-width: 960px;*/
-    padding: 20px;
+html {
+    height: -webkit-fill-available;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    height: -webkit-fill-available;
+
+    font-family: var(--paragraph-font);
+
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -41,13 +50,14 @@ header {
     padding: 20px;
     background-color: var(--accent1-color);
     display: grid;
-    grid-template-columns: .3fr 3fr;
+    grid-template-columns: .4fr 1.5fr 3fr;
     align-items: center;
     border-bottom: 1px solid #ccc;
+    margin-top: 25%;
 }
 
-p {
-    padding: 25px;
+header h1 {
+    padding-left: 2rem;
 }
 
 nav {
@@ -55,7 +65,7 @@ nav {
     font-size: 1.2rem;
     display: flex;
     list-style: none;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 nav li {
@@ -85,10 +95,11 @@ img {
 }
 
 footer {
+    margin-top: auto;
     text-align: center;
     background-color: var(--nav-background-color);
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 2fr 0.7fr;
 }
 
 /* Class Selectors */
@@ -146,4 +157,83 @@ footer {
 #history {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
+}
+
+form {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+legend {
+    font-size: larger;
+    margin-left: 30%;
+    padding-top: 20px;
+}
+
+fieldset {
+    border: none;
+}
+
+.form-item {
+    margin-left: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.4rem;
+    width: 40%;
+}
+
+/* Contact Page Specifics */
+
+.company-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
+
+.ee-showcase {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+figcaption {
+    max-width: 235px;
+    font-size: small;
+    margin-left: 0.5rem;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: var(--nav-background-color);
+    height: 40px;
+    width: 200px;
+    margin-bottom: 0.5rem;
+}
+
+button:hover {
+    background-color: var(--nav-hover-background-color);
+}
+
+input[type="text"] {
+    width: 60%
+}
+
+input[type="email"] {
+    width: 60%
+}
+
+input[type="radio"] {
+    margin-left: 200px;
+}
+
+textarea {
+    width: 60%
 }
