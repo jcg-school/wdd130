@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 130 Quiz Form Assignment">
+    <meta name="author" content="Jareth Gish">
+    <title>Jareth Gish | WDD 130 | Quiz Form Assignment</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+  </head>
+  <body>
+    <header>
+        <h1> WDD 130 | Jareth Gish | Quiz Form Assignment</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>HTML & CSS Quiz</legend>
+                <div class="form-item">
+                    <label for="q1">What is your favorite HTML element?</label>
+                    <input type="text" id="q1" name="q1">
+                </div>
+                <div class="form-item">
+                    <label for="q2">Describe the difference between grid and flexbox displays: </label>
+                    <textarea id="q2" name="q2" rows="6" placeholder="Hint: Flexbox is flexier..."></textarea>
+                </div>
+                <div class="form-item">
+                    <label for="q3">What is the CSS styling root selector? </label>
+                    <select id="q3" name="q3">
+                        <option value="" selected disabled>Choose one...</option>
+                        <option value="#root">#root</option>
+                        <option value="html">html</option>
+                        <option value="*">*</option>
+                        <option value=".root">.root</option>
+                        <option value="body">body</option>
+                         <option value="body.root">body.root</option>
+                    </select>
+                </div>
+                <div class="form-item">
+                    <label for="q4">There are ___ levels in the CSS assignment game "Flexbox Froggy".</label>
+                    <input type="number" id="q4" name="q4">
+                </div>
+            </fieldset>
+
+            <div class="submit">
+                <button type="submit">Submit Quiz</button>
+            </div>
+
+        </form>
+    </main>
+    <footer>
+        &copy; 2023 | WDD 130 Quiz Form Assignment | Jareth Gish
+    </footer>
+  </body>
+  </html>
