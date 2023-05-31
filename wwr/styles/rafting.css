@@ -29,9 +29,9 @@ html {
 }
 
 body {
-    display: flex;
+    /*display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;*/
     height: 100vh;
     height: -webkit-fill-available;
 
@@ -53,7 +53,7 @@ header {
     grid-template-columns: .4fr 1.5fr 3fr;
     align-items: center;
     border-bottom: 1px solid #ccc;
-    margin-top: 25%;
+    /*margin-top: 25%;*/
 }
 
 header h1 {
@@ -102,7 +102,14 @@ footer {
     grid-template-columns: 2fr 0.7fr;
 }
 
-/* Class Selectors */
+/* about.html details*/
+.purpose-statement {
+    padding-top: 22px;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
 .socialinks {
     text-decoration: none;
 }
@@ -118,12 +125,16 @@ footer {
     height: auto;
 }
 
+#hero-bg-mod {
+    opacity: 0.6;
+}
+
 .transparent-block {
     background-color: rgba(174, 195, 176, .6)
 }
 
 #hero-overlay-h1 {
-    color: var(--secondary-color);
+    /*color: var(--secondary-color);*/
     position: absolute;
     top: 50px;
     Left: 225px;
@@ -132,10 +143,8 @@ footer {
 #hero-overlay-h2 {
     position: relative;
     text-align: center;
-    color: var(--secondary-color);
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 0;
+    /*color: var(--secondary-color);*/
+    padding-top: 12px;
 }
 
 #hero-overlay-article {
@@ -144,8 +153,7 @@ footer {
     left: 100px;
     max-width: 80%;
     text-align: left;
-    margin-top: 0;
-    padding-top: 0;
+    padding-left: 5%;
 }
 
 #hero-overlay-image {
@@ -159,13 +167,17 @@ footer {
     grid-template-rows: 1fr 1fr 1fr;
 }
 
+/* ??? */
+
 form {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
 }
 
-legend {
+/*contact.html details*/
+
+.contact-legend {
     font-size: larger;
     margin-left: 30%;
     padding-top: 20px;
@@ -185,12 +197,19 @@ fieldset {
 }
 
 /* Contact Page Specifics */
+.contact-title {
+    text-align: center;
+}
 
 .company-info {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: larger;
+}
+
+.info-space {
+    padding: 15px;
 }
 
 .ee-showcase {
@@ -237,3 +256,170 @@ input[type="radio"] {
 textarea {
     width: 60%
 }
+
+/*Trips Page Specifics */
+.main-flow {
+    /*display: grid;
+    grid-template: .4fr 1fr .6fr 1.2fr / 1fr;*/
+    display: flex;
+    flex-direction: column;
+}
+
+.block1-wrapper {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.experiences-wrapper {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template: 50% 50% / 30% 30% 30%;
+}
+
+.center-grid {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+#schedule-button {
+    height: 5rem;
+    width: 17rem;
+    font-size: large;
+}
+
+.info-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    text-align: left;
+    padding: 2rem;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.spacer {
+    padding: 3rem;
+}
+
+/*Index Page Specifics*/
+.index-main-flow {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.index-block1-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.index-block1-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+.index-block1-overlay-wrapper {
+    position: absolute;
+    top: 190px;
+}
+
+.index-block1-overlay-wrapper h1  {
+    padding: 15px;
+    text-align: center;
+}
+
+.index-block1-overlay-wrapper button {
+    margin-left: 25%;
+}
+
+.index-block2-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.offerings {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    column-gap: 10px;
+    width: 90%;
+    /*padding-top: 10px;*/
+    align-items: center;
+    justify-content: center;
+    max-height: 300px;
+}
+
+.offerings img {
+    max-height: 200px;
+    width: 100%;
+}
+
+.offerings h3 {
+    text-align: center;
+}
+
+.index-block3-wrapper {
+    width: 65%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-left: 17%;
+    
+}
+
+
+
+.sign-up-form fieldset {
+    padding-top: 45px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: center;
+    border: 1px dotted #310a31;
+}
+
+.sign-up-form legend {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+
+}
+
+.newsletter-submit {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    text-align: center;
+}
+
+.newsletter-item #fullname {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.newsletter-item #useremail {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
